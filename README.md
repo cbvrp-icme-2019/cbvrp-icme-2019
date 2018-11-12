@@ -7,12 +7,11 @@ Video relevance computation is one of the most important tasks for personalized 
 
 ## Task and Data
 
-The data is composed of two parts. One part is viewer records, i.e. a data sample is a viewer record。 For example, a record “MovieA, MovieB, MovieC -> MovieD” means a viewer has watched three movies A, B, C and then we recommend movie D to the viewer. If the viewer clicked the movie D, we consider this record as a positive sample, otherwise it is a negative sample. The other one is visual and audio features extracted from the TV-show/movie trailers. The features are extracted using CNN in a format of 2048 dimensional vectors of floats. For each track, there are respectively a training set, a validation set and a test set. In the test set, we will give a bunch of viewer records. The participants need to calculate a probability score indicating how much probably the viewer will click. The ground-truth for training set and validation set will be released to participants after registration. The details of the dataset are given as follows.
+The data is composed of two parts. One part is viewer records, i.e. a data sample is a viewer record. For example, a record “MovieA, MovieB, MovieC -> MovieD” means a viewer has watched three movies A, B, C and then we recommend movie D to the viewer. If the viewer clicked the movie D, we consider this record as a positive sample, otherwise it is a negative sample. The other one is visual and audio features extracted from the TV-show/movie trailers. The features are extracted using CNN in a format of 2048 dimensional vectors of floats. For each track, there are respectively a training set, a validation set and a test set. In the test set, we will give a bunch of viewer records. The participants need to calculate a probability score indicating how much probably the viewer will click. The ground-truth for training set and validation set will be released to participants after registration. The details of the dataset are given as follows.
 
 #### Track 1: TV-series
 
 Pre-extracted features derived from nearly 3,570 TV-series video trailers. The whole set is divided into 3 subsets: training set, validation set, and testing set.
-
 
 |           |  TV-series |   Records   |
 | --------- |:---------: |:-----------:|
