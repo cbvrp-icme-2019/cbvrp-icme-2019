@@ -16,7 +16,7 @@ We have held CBVRP challenge during the last two years (ICIP2017 and ACM Multime
 
 The main task of this challenge is to solve the “cold-start” problem. According to the viewer behavior history and the video content, the participants need to predict the viewer click-through behavior on new TV series or new movies. The viewer feedbacks have been cleaned to avoid any privacy issues. Instead of delivering original video content, audio and visual features are extracted from the video and delivered as the representation of the video content. Specifically, there are two separated tracks for TV series and movies respectively.
 
-For each track, the data is composed of two parts. One part is viewer records, i.e. a data sample is a viewer record. For example, a record “*Movie<sub>1</sub>, Movie<sub>2</sub>, ... , Movie<sub>N</sub> -> Movie<sub>N+1</sub>*” means a viewer has watched *N* movies in a time sequence and then we recommend *Movie<sub>N+1</sub>* to the viewer. If the viewer clicked *Movie<sub>N+1</sub>*, we consider this record as a positive sample, otherwise it is a negative sample. The other part is visual and audio features extracted from the TV series/movie trailers. The visual feature includes both frame-level feature and clip-level feature. All the features are extracted using pre-trained CNN models. For each track, there are respectively a training set, a validation set and a test set. In the test set, we will give a bunch of viewer records. The participants need to calculate a probability score indicating how much probably the viewer will click the TV series/movie we recommend. The training set and validation set will be released to participants after registration. The details of the dataset are given as follows.
+For each track, the data is composed of two parts. One part is viewer records, i.e. a data sample is a viewer record. For example, a record “*Movie<sub>1</sub> , Movie<sub>2</sub> , ... , Movie<sub>N</sub>  ->  Movie<sub>N+1</sub>*” means a viewer has watched *N* movies in a time sequence and then we recommend *Movie<sub>N+1</sub>* to the viewer. If the viewer clicked *Movie<sub>N+1</sub>*, we consider this record as a positive sample, otherwise it is a negative sample. The other part is visual and audio features extracted from the TV series/movie trailers. The visual feature includes both frame-level feature and clip-level feature. All the features are extracted using pre-trained CNN models. For each track, there are respectively a training set, a validation set and a test set. In the test set, we will give a bunch of viewer records. The participants need to calculate a probability score indicating how much probably the viewer will click the TV series/movie we recommend. The training set and validation set will be released to participants after registration. The details of the dataset are given as follows.
 
 #### Track 1: TV series
 
@@ -67,6 +67,11 @@ The participants should send the results to cbvrp-icme-2019@hulu.com. After rece
 |   Apr 22, 2019    | Notification of paper acceptance     |
 |   Apr 29, 2019    | Deadline for camera-ready papers     |
 
+## Prizes
+
+The total reward is $2,000 USD for each track including the taxable amount, which will be fully sponsored by Hulu LLC. The number of winners will depend on the number of participants and the quality of the results. The organizers reserve the complete right in the final judgement and decision.
+
+The winners of the challenge are required to provide a technique report describing the details of the winning algorithms, and to give a presentation during the conference.
 
 ## Organizers
 
